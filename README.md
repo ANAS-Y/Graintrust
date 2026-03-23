@@ -43,7 +43,7 @@
 | **Database** | MongoDB (Mongoose ODM) |
 | **AI/ML** | Google Gemini API (Vision & Pro) |
 | **Auth** | JWT (JSON Web Tokens), bcrypt.js |
-| **Payments** | Interswitch API (Simulated Escrow Flow) |
+| **Payments** | Interswitch API (Sandbox Integration) |
 
 ---
 
@@ -61,7 +61,6 @@ graintrust-ai/
 │       ├── models/     # Mongoose Schemas (Grain, Escrow, User)
 │       ├── routes/     # API Endpoints
 │       └── services/   # AI Integration (Gemini SDK)
-├── firestore.rules     # Security rules (if using Firebase)
 └── package.json        # Dependencies & Scripts
 ```
 
