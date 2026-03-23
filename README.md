@@ -89,7 +89,7 @@ graintrust-ai/
 
 1.  **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/graintrust-ai.git
+    git clone https://github.com/HARDECOMM/Graintrust.git
     cd graintrust-ai
     ```
 
@@ -101,7 +101,7 @@ graintrust-ai/
 3.  **Environment Variables**
     Create a `.env` file in the root:
     ```env
-    PORT=3000
+    PORT=5000
     MONGODB_URI=your_mongodb_connection_string
     JWT_SECRET=your_super_secret_key
     GEMINI_API_KEY=your_google_gemini_api_key
