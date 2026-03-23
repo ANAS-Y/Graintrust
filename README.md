@@ -105,7 +105,7 @@ graintrust-ai/
     JWT_SECRET=your_super_secret_key
     
     # Secure random string for JWT signing 
-    JWT_SECRET=7f8e9a2b1c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u
+    JWT_SECRET=strong_random_jwt
     
     # Google Gemini API Key (For AI features)
     GEMINI_API_KEY=your_google_gemini_api_key
