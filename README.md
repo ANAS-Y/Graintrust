@@ -101,9 +101,21 @@ graintrust-ai/
     Create a `.env` file in the root:
     ```env
     PORT=5000
-    MONGODB_URI=your_mongodb_connection_string
+    MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_super_secret_key
+    
+    # Secure random string for JWT signing 
+    JWT_SECRET=7f8e9a2b1c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u
+    
+    # Google Gemini API Key (For AI features)
     GEMINI_API_KEY=your_google_gemini_api_key
+
+    # Interswitch Configuration
+    INTERSWITCH_CLIENT_ID=interswitch_client_id
+    INTERSWITCH_CLIENT_SECRET=client_secrete
+    INTERSWITCH_MERCHANT_CODE=merchant_code
+    INTERSWITCH_TERMINAL_ID=terminal_id
+    INTERSWITCH_WEBHOOK_SECRET=interswitch_webhook
     ```
 
 4.  **Run the Application**
@@ -136,8 +148,13 @@ To move from the current simulation to a **Live Interswitch Integration**, follo
 
 ## 👨‍💻 Author
 
+Team Graintrust_ai
+
 ---
 
 ## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 
 # Graintrust
