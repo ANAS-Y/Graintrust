@@ -65,7 +65,7 @@ const fundEscrow = async (req, res) => {
         console.log(`🚀 Initiating Real Interswitch Escrow: ₦${amount} for ${req.user.email}`);
         const iswResponse = await interswitch.initiateEscrowFunding(amount, req.user.email, reference);
         interswitchRef = iswResponse.transactionReference || reference;
-        console.log(`✅ Interswitch Reference Generated: ${interswitchRef}`);
+        console.log(`Interswitch Reference Generated: ${interswitchRef}`);
       }
     } catch (iswError) {
       console.warn('Interswitch API call failed, falling back to reference:', iswError.message);

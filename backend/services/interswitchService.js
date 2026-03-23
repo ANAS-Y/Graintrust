@@ -1,16 +1,6 @@
 const axios = require('axios');
 const crypto = require('crypto');
 
-/**
- * Interswitch Integration Service
- * 
- * Requirements in .env:
- * INTERSWITCH_CLIENT_ID=your_client_id
- * INTERSWITCH_CLIENT_SECRET=your_client_secret
- * INTERSWITCH_TERMINAL_ID=your_terminal_id
- * INTERSWITCH_MERCHANT_CODE=your_merchant_code
- */
-
 const INTERSWITCH_BASE_URL = process.env.NODE_ENV === 'production' 
   ? 'https://saturn.interswitchng.com/api/v2' 
   : 'https://qa.interswitchng.com/api/v2';
