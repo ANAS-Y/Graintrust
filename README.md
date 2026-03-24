@@ -7,7 +7,7 @@
 
 ---
 
-![Dashboard Screenshot](docs/dashboard.png)
+![Dashboard Screenshot](docs/assets/img.drawio.png)
 
 
 ## 🧠 The Problem & Our Solution
