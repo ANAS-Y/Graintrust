@@ -7,7 +7,7 @@
 
 ---
 
-![Dashboard Screenshot](docs/assets/img.drawio.png)
+![Workflow Diagram Screenshot](assets/img.drawio.png)
 
 
 ## 🧠 The Problem & Our Solution
