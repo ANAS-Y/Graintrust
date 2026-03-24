@@ -72,6 +72,7 @@ graintrust-ai/
 ### Authentication
 *   `POST /api/auth/register` - Create a new Farmer or Mill account.
 *   `POST /api/auth/login` - Authenticate and receive JWT.
+*   `GET /api/auth/profile` - Get current user details | protected Route.
 
 ### Grain Management
 *   `GET /api/grains` - List all available grains (Mill view).
