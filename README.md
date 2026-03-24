@@ -7,6 +7,9 @@
 
 ---
 
+![Dashboard Screenshot](docs/dashboard.png)
+
+
 ## 🧠 The Problem & Our Solution
 
 ### The Trust Gap
