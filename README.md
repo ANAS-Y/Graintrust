@@ -6,9 +6,8 @@
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
-
 ![Workflow Diagram Screenshot](assets/img.drawio.png)
-
+---
 
 ## 🧠 The Problem & Our Solution
 
