@@ -45,9 +45,6 @@
 | **Auth** | JWT (JSON Web Tokens), bcrypt.js |
 <<<<<<< HEAD
 | **Payments** | Interswitch API (Sandbox Integration) |
-=======
-| **Payments** | Interswitch API (Simulated Escrow Flow) |
->>>>>>> 61dfaf8 (add README)
 
 ---
 
@@ -65,13 +62,8 @@ graintrust-ai/
 │       ├── models/     # Mongoose Schemas (Grain, Escrow, User)
 │       ├── routes/     # API Endpoints
 │       └── services/   # AI Integration (Gemini SDK)
-<<<<<<< HEAD
-=======
-├── firestore.rules     # Security rules (if using Firebase)
->>>>>>> 61dfaf8 (add README)
 └── package.json        # Dependencies & Scripts
 ```
-
 ---
 
 ## 📡 API Documentation (Key Endpoints)
@@ -96,12 +88,9 @@ graintrust-ai/
 
 1.  **Clone the Repository**
     ```bash
-<<<<<<< HEAD
+
     git clone https://github.com/HARDECOMM/Graintrust.git
-=======
-    git clone https://github.com/yourusername/graintrust-ai.git
->>>>>>> 61dfaf8 (add README)
-    cd graintrust-ai
+
     ```
 
 2.  **Install Dependencies**
@@ -167,22 +156,8 @@ To move from the current simulation to a **Live Interswitch Integration**, follo
 
 ## 👨‍💻 Author
 
-<<<<<<< HEAD
-Team Graintrust_ai
-=======
-**Ademoye Haruna**
-*   AI/ML Engineer | Full-Stack Developer
-*   [LinkedIn](https://linkedin.com/in/ademoyeharuna) | [Portfolio](https://ademoyeharuna.com)
->>>>>>> 61dfaf8 (add README)
-
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 61dfaf8 (add README)
-# Graintrust
