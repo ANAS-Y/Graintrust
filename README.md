@@ -43,7 +43,11 @@
 | **Database** | MongoDB (Mongoose ODM) |
 | **AI/ML** | Google Gemini API (Vision & Pro) |
 | **Auth** | JWT (JSON Web Tokens), bcrypt.js |
+<<<<<<< HEAD
 | **Payments** | Interswitch API (Sandbox Integration) |
+=======
+| **Payments** | Interswitch API (Simulated Escrow Flow) |
+>>>>>>> 61dfaf8 (add README)
 
 ---
 
@@ -61,6 +65,10 @@ graintrust-ai/
 │       ├── models/     # Mongoose Schemas (Grain, Escrow, User)
 │       ├── routes/     # API Endpoints
 │       └── services/   # AI Integration (Gemini SDK)
+<<<<<<< HEAD
+=======
+├── firestore.rules     # Security rules (if using Firebase)
+>>>>>>> 61dfaf8 (add README)
 └── package.json        # Dependencies & Scripts
 ```
 
@@ -88,7 +96,11 @@ graintrust-ai/
 
 1.  **Clone the Repository**
     ```bash
+<<<<<<< HEAD
     git clone https://github.com/HARDECOMM/Graintrust.git
+=======
+    git clone https://github.com/yourusername/graintrust-ai.git
+>>>>>>> 61dfaf8 (add README)
     cd graintrust-ai
     ```
 
@@ -100,6 +112,7 @@ graintrust-ai/
 3.  **Environment Variables**
     Create a `.env` file in the root:
     ```env
+<<<<<<< HEAD
     PORT=5000
     MONGO_URI=your_mongodb_connection_string
     JWT_SECRET=your_super_secret_key
@@ -116,6 +129,12 @@ graintrust-ai/
     INTERSWITCH_MERCHANT_CODE=merchant_code
     INTERSWITCH_TERMINAL_ID=terminal_id
     INTERSWITCH_WEBHOOK_SECRET=interswitch_webhook
+=======
+    PORT=3000
+    MONGODB_URI=your_mongodb_connection_string
+    JWT_SECRET=your_super_secret_key
+    GEMINI_API_KEY=your_google_gemini_api_key
+>>>>>>> 61dfaf8 (add README)
     ```
 
 4.  **Run the Application**
@@ -148,13 +167,22 @@ To move from the current simulation to a **Live Interswitch Integration**, follo
 
 ## 👨‍💻 Author
 
+<<<<<<< HEAD
 Team Graintrust_ai
+=======
+**Ademoye Haruna**
+*   AI/ML Engineer | Full-Stack Developer
+*   [LinkedIn](https://linkedin.com/in/ademoyeharuna) | [Portfolio](https://ademoyeharuna.com)
+>>>>>>> 61dfaf8 (add README)
 
 ---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 61dfaf8 (add README)
 # Graintrust
