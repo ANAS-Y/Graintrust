@@ -130,26 +130,31 @@ graintrust-ai/
 
 ## 💳 Real Interswitch Integration Guide
 
-To move from the current simulation to a **Live Interswitch Integration**, follow these steps:
+To move from the current **Sandbox** to a **Live Production Integration**, follow these technical steps:
 
-### 1. Requirements
-*   **Merchant Account:** Register at [Interswitch Quickteller Business](https://business.quickteller.com/).
-*   **API Credentials:** Obtain your `Client ID`, `Client Secret`, and `Terminal ID`.
-*   **Certificate:** For production, you'll need an SSL certificate and potentially a signed request header (Interswitch Auth v2).
+### 1. Developer Portal Setup
+*   **Registration:** Create a merchant account at [Interswitch Quickteller Business](https://business.quickteller.com/).
+*   **App Creation:** Create a new application in the [Interswitch Developer Console](https://developer.interswitchng.com/) to obtain your `Client ID` and `Client Secret`.
+*   **Whitelisting:** Request IP whitelisting for your production server (e.g., Render/AWS) and register your `Callback URL`.
 
-### 2. Implementation Steps
-1.  **Authentication:** Implement the OAuth2 Client Credentials flow to get an `access_token`.
-2.  **Payment Initiation:** Use the `POST /payments` endpoint to generate a payment URL or trigger a USSD/Card prompt.
-3.  **Escrow Logic:** 
-    *   Use the **Split Payments** feature. 
-    *   Initiate the payment with the full amount.
-    *   Keep the funds in the Interswitch "Settlement Account" until the verification trigger.
-4.  **Disbursement:** Use the **Transfer API** to move funds from the settlement account to the farmer's verified bank account.
-5.  **Webhooks:** Set up an endpoint (e.g., `/api/payments/webhook`) to listen for `TRANSACTION_SUCCESS` events from Interswitch.
+### 2. Technical Implementation
+1.  **Auth v2 Signature:** The current implementation in `interswitchService.js` uses the **Interswitch Auth v2** signature (SHA512). Ensure your `Client Secret` is kept secure on the server.
+2.  **Payment Flow:** 
+    *   Use `POST /payments/initiate` to get a transaction reference.
+    *   Redirect the Mill owner to the Interswitch Webpay page or use the inline SDK.
+3.  **Escrow Management:** 
+    *   Configure your merchant account for **Deferred Settlement**.
+    *   Funds are authorized and held by Interswitch upon successful payment.
+4.  **Disbursement (Transfer API):** 
+    *   Once the **AI Quality Scan** is successful, call the `POST /transfers` endpoint.
+    *   This moves the held funds from your settlement account to the Farmer's verified bank account.
+5.  **Status Verification:** Always use the `GET /transactions` endpoint to verify the final status of a payment before updating your database.
 
 ---
 
 ## 👨‍💻 Author
+
+Team Graintrust_Ai
 
 ---
 
