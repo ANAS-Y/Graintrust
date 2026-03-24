@@ -1,16 +1,14 @@
----
-![Workflow Diagram Screenshot](assets/img.drawio.png)
----
-
 # 🌾 GrainTrust AI: Securing the Rice Supply Chain
 
 **GrainTrust AI** is a full-stack Agri-FinTech platform designed to bridge the trust gap between smallholder farmers and grain mills in Nigeria. By combining **AI-powered quality verification** with **secure Interswitch escrow payments**, we ensure transparent, fair, and efficient trading.
 
 [![Demo](https://img.shields.io/badge/Demo-Live_Preview-4A90E2?style=for-the-badge)](https://ais-pre-3or2ms6ssjuwvldizpjspa-379472719793.europe-west2.run.app)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
-
 ---
-
+---
+![Workflow Diagram Screenshot](assets/img.drawio.png)
+---
+---
 ## 🧠 The Problem & Our Solution
 
 ### The Trust Gap
