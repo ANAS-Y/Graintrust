@@ -43,7 +43,6 @@
 | **Database** | MongoDB (Mongoose ODM) |
 | **AI/ML** | Google Gemini API (Vision & Pro) |
 | **Auth** | JWT (JSON Web Tokens), bcrypt.js |
-<<<<<<< HEAD
 | **Payments** | Interswitch API (Sandbox Integration) |
 
 ---
